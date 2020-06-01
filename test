@@ -1,0 +1,11 @@
+account = 10000
+
+draw_money = int(input("insert draw money: "))
+if account >= draw_money:
+    account -= draw_money
+    print(str(draw_money) + "원이 인출 되었습니다.")
+
+else:
+    print("인출이 불가능 합니다." + str(draw_money - account) + "원의 잔액이 부족합니다.")
+
+print("현재 잔액은 {} 원 입니다.".format(account))
